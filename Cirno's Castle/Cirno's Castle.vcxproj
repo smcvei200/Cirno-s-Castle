@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C56FBDE-A936-4770-A287-9E5CFB4C057A}</ProjectGuid>
+    <RootNamespace>CirnosCastle</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\stephen\Documents\Visual Studio 2013\Projects\Cirno%27s Castle\Cirno%27s Castle\glm;C:\Program Files\glew-1.9.0\include;C:\Program Files\freeglut\include;C:\Users\stephen\Documents\Visual Studio 2013\Projects\Cirno%27s Castle\Cirno%27s Castle\OpenAL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\freeglut\lib;C:\Program Files\glew-1.9.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;freetype.lib;glm-0.3.2Lib.lib;libdrawtext.lib;OpenAL32.lib;alut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\stephen\Documents\Visual Studio 2013\Projects\Cirno%27s Castle\Cirno%27s Castle\glm;C:\Program Files\glew-1.9.0\include;C:\Program Files\freeglut\include;C:\Users\stephen\Documents\Visual Studio 2013\Projects\Cirno%27s Castle\Cirno%27s Castle\OpenAL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\freeglut\lib;C:\Program Files\glew-1.9.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;freetype.lib;glm-0.3.2Lib.lib;libdrawtext.lib;OpenAL32.lib;alut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cEnemy.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cLaser.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cModel.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cModelLoader.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cPlayer.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cSound.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cWNDManager.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\GameConstants.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\wglext.h" />
+    <ClInclude Include="..\..\Cirno%27s Castle\Cirno%27s Castle\windowOGL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cEnemy.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cLaser.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cModel.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cModelLoader.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cPlayer.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cSound.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\cWNDManager.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\GameConstants.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\main.cpp" />
+    <ClCompile Include="..\..\Cirno%27s Castle\Cirno%27s Castle\windowOGL.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
